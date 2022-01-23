@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Chrome, Chrome">
+<title>Page title </title>
+</head>
+
+<body>
+
+<h1>Fundamentos JavaScript</h1> 
+
+<ul>
+    <li>Primavera</li>
+    <li>Verano</li>
+    <li>Otoño</li>
+    <li>Invierno</li>
+</ul>
+
+<script>
+
+let nombre = "Roberto";
+let apellido = "Muñoz";
+// Es lo mismo 
+let saludo = new String("Hola mundo");
+
+let lorem = "      Lorem Ipsum hola mundo lol lol   ";
+
+let codigo = "12#23#41"
+
+
+console.log(nombre,apellido,saludo);
+console.log(nombre.length,apellido.length,saludo.length);
+console.log(nombre.length + apellido.length + saludo.length);
+console.log(nombre.toUpperCase(),apellido.toLowerCase(),saludo);
+
+console.log(lorem.includes("lol"),
+lorem,
+lorem.trim(), // Quita los espacios del principio y del final
+lorem.split(" "), // Para separar palabras con separador
+codigo.split("#")
+)
+
+
+// Concatenación
+
+let concatenacion = nombre.concat(apellido)
+let concatenacion2 = nombre+apellido;
+
+console.log(concatenacion)
+console.log(concatenacion2)
+
+
+// --- Template Strings ---
+
+
+let saludo2 =`Hola mi nombre es ${nombre} ${apellido}.`;
+console.log(saludo2)
+
+
+let ul = "<ul><li>Primavera</li><li>Verano</li><li>Otoño</li><li>Invierno</li></ul>";
+console.log(ul)
+
+/* Con las comillas `` (Alt+ESC) , respeta el formato 
+del codigo , no tiene que ir en una linea
+*/
+
+let ul2 = `<ul>
+    <li>Primavera</li>
+    <li>Verano</li>
+    <li>Otoño</li>
+    <li>Invierno</li>
+</ul>`;
+
+console.log(ul2);
+
+
+
+</script>
+    
+</body>
+
+
+</html>

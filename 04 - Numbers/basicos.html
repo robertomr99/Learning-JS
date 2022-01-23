@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Chrome, Chrome">
+<title>Page title </title>
+</head>
+
+<body>
+
+<h1>Fundamentos JavaScript</h1> 
+
+
+
+<script>
+
+let a = 2;
+let b = new Number (1);
+let c = 6.19;
+let d = "1.2"
+
+console.log(a,b)
+console.log(c.toFixed(1)) // Redondear un valor (N de decimales)
+console.log(c.toFixed(5))
+
+console.log(parseInt(c)) // Devuelve la parte entera
+console.log(typeof c, typeof d) // Para saber que tipo es
+
+console.log(a+b);
+console.log (c+d); // Concatena un número con el String d
+console.log(c+parseInt(d)) // Esto solo sumaria la parte entera del numero
+console.log(c+parseFloat(d)) // Esto sumaria ambas partes
+
+console.log(c+Number.parseFloat(d)) 
+console.log((c+parseFloat(d)).toFixed(2)) // Redondear la suma  
+
+</script>
+    
+</body>
+
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Chrome, Chrome">
+<title>Page title </title>
+</head>
+
+<body>
+
+<h1>Fundamentos JavaScript</h1> 
+
+
+
+<script>
+
+const a = [];
+const b = [1,true,"Hola",["A","B","C",[1,2,3]]];
+
+console.log(a);
+console.log(b);
+console.log(b.length);
+console.log(b[2]);
+console.log(b[3]);
+console.log(b[3][2]);
+console.log(b[3][3][0]);
+
+const c = Array.of("X","Y","Z",9,8,7);
+console.log(c);
+
+const d = new Array(100).fill(false); // Rellenamos un array de 100 con false
+console.log(d)
+
+const f = new Array(1,2,3,true,false);
+console.log(f)
+
+const colores = ["rojo","verde","amarillo"]
+console.log(colores)
+
+colores.push("Negro") // Agrega un elemento al final
+console.log(colores)
+
+colores.pop(); // Elimina el último elemento
+console.log(colores);
+
+colores.forEach(function(color, index){
+    console.log(`<li id="${index}">${color}</li>`)
+})
+
+// Por cada elemento ejecuta una función
+
+
+</script>
+    
+</body>
+
+
+</html>   

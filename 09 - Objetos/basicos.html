@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Chrome, Chrome">
+<title>Page title </title>
+</head>
+
+<body>
+
+<h1>Fundamentos JavaScript</h1> 
+
+
+
+<script>
+
+
+const objeto = {}
+
+const c = new Object();
+
+const rob = {
+    nombre: "Roberto",
+    apellido: "Munoz",
+    edad: 22,
+    pasatiempos: ["Series", "Jugar"],
+    soltero: true,
+    contacto: {
+        email: "roberto@gmail.com",
+        twitter: "@robmr99",
+        movil: "6078892316"
+    },
+    saludar: function(){
+        console.log('Hola:)')
+    },
+
+    decirMiNombre: function(){
+        console.log(`Hola me llamo ${this.nombre}`)
+    }
+}
+
+console.log(rob)
+console.log(rob["apellido"]); 
+console.log(rob.apellido);
+console.log(rob.pasatiempos[0], rob.pasatiempos[1])
+console.log("email:"+rob.contacto.email, "Telefono:"+rob.contacto.movil)
+
+rob.saludar()
+rob.decirMiNombre()
+
+console.log(Object.keys(rob)) // Muestra cada atributo del objeto.
+console.log(Object.values(rob)) // Muestra los valores de cada atributo.
+console.log(rob.hasOwnProperty("nombre"))
+
+function prueba(){
+if(rob.hasOwnProperty("nombre")){
+    console.log("El objeto roberto tiene el nombre")
+}else{
+    console.log("No tiene nada")
+}
+}
+
+prueba();
+
+
+
+
+</script>
+    
+</body>
+
+
+</html>   

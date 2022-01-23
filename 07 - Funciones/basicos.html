@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Chrome, Chrome">
+<title>Page title </title>
+</head>
+
+<body>
+
+<h1>Fundamentos JavaScript</h1> 
+
+
+
+<script>
+
+// Funciones declaradas
+function funcionPrueba(){
+console.log("Uno");
+console.log("Dos");
+console.log("Tres");
+}
+
+// Función que devuelve valor
+
+function funcionDevuelveValor(){
+    return "La función ha retornado una cadena de texto";
+}
+
+function funcionConDosReturn(){
+console.log("Primer Return")
+return 19;
+// A partir del return deja de ejecutar lo que tiene detras
+console.log("Segundo Return")
+return 20;
+}
+
+
+// Función con parámetros
+function saludar(nombre,edad){
+    console.log(`Hola mi nombre es ${nombre} y tengo ${edad}`)
+}
+
+// Funciones declaradas vs Funciones Expresadas
+
+funcionDeclarada()
+
+/* JavaScript eleva las funciones , 
+por eso podemos llamarla antes que se cree
+*/
+
+function funcionDeclarada(){
+    console.log("Hola monger")
+}
+
+funcionDeclarada()
+
+// Función anónima, sin nombre 
+
+// funcionExpresada(); No se puede llamar arriba pq no está declarada aún 
+
+const funcionExpresada = function(){
+    console.log("Esto es una función Expresada , es decir una función que se le ha asignado como valor a una variable")
+}
+
+funcionExpresada();
+
+
+
+// Invocación de una función
+
+funcionPrueba();
+
+let valorFuncion = funcionDevuelveValor();
+console.log(valorFuncion)
+
+console.log(funcionConDosReturn())
+
+saludar("Roberto", 21)
+
+</script>
+    
+</body>
+
+
+</html>   
